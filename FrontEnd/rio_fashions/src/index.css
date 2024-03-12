@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Cookie&family=Lato&family=Metal+Mania&family=Open+Sans&family=Rubik+Maps&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ece9e9;
+}
+
+p{
+    color: #797070;
+    font-size: 0.9rem
+}
+
+.card{
+    @apply bg-white rounded overflow-hidden shadow-md relative;
+    }
+
+.banner-for-content{
+    background-image: url("../src/assets/Banner/BannerforContent.png");
+}
+
+input[type='text']:focus~.input-text{
+    @apply text-red-400 bg-[#ece9e9] transform -translate-y-7 -translate-x-4 scale-75;
+}
+input[type='text']:valid+.input-text{
+    @apply text-red-400 bg-[#ece9e9] transform -translate-y-7 -translate-x-4 scale-75;
+}
+textarea:focus~.input-text{
+    @apply text-red-400 bg-[#ece9e9] transform -translate-y-9 -translate-x-4 scale-75;
+}
+textarea:valid+.input-text{
+    @apply text-red-400 bg-[#ece9e9] transform -translate-y-9 -translate-x-4 scale-75;
+}
+
+.active{
+    color: red;
+}
